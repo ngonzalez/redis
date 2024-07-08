@@ -36,6 +36,8 @@ ENV REDIS_PORT=$redis_port
 COPY config/redis.conf /etc/redis/redis.conf
 RUN sed -i "s/__PORT__/$REDIS_PORT/" /etc/redis/redis.conf
 RUN chown $USER: /etc/redis/redis.conf
+RUN mkdir -p /var/run/redis
+RUN chown $USER: /var/run/redis
 
 EXPOSE $REDIS_PORT
 
