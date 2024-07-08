@@ -5,5 +5,5 @@ docker build . -f Dockerfile -t redis
 ```
 
 ```shell
-docker run --rm -it -p 6379:6379 redis
+docker run -d --rm -it -p 6379:6379 redis
 ``` 
