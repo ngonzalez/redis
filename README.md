@@ -1,4 +1,4 @@
-#### postgresql-redis
+#### redis-docker
 
 ```shell
 docker build . -f Dockerfile -t redis
