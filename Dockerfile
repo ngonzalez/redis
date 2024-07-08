@@ -41,4 +41,4 @@ RUN chown $USER: /var/run/redis
 
 EXPOSE $REDIS_PORT
 
-CMD ["/usr/bin/entrypoint.sh", "--server"]
+CMD ["entrypoint.sh", "--server"]
