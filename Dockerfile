@@ -2,8 +2,8 @@ FROM --platform=linux/arm64 debian:bookworm
 
 # apt
 ENV DEBIAN_FRONTEND=noninteractive
-RUN echo "deb http://ftp.fr.debian.org/debian/ bookworm main contrib non-free" > /etc/apt/sources.list
-RUN apt-get update -yq
+RUN echo 'deb http://mirrors.ocf.berkeley.edu/debian/ unstable main contrib non-free' > /etc/apt/sources.list
+RUN apt-get update -yqq
 RUN apt-get dist-upgrade -yq
 RUN apt-get upgrade -yq
 
