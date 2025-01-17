@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 debian:bookworm
+FROM --platform=linux/arm64 debian:bookworm AS build_arm64
 
 # apt
 ENV DEBIAN_FRONTEND=noninteractive
